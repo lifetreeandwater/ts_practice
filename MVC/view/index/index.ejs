@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <title>Document</title>
+    <title><%=title%></title>
 </head>
+
 <body>
-    <h1>首页</h1>
+    <div class="container">
+        <div class="page-header">
+            <h1>秋一布谷鸟nodeJs练习</h1>
+        </div>
+        <ul class="list-group">
+            <%heros.forEach(item=>{%>
+            <li class="list-group-item">
+                <span><%=item.name%></span>
+                <span><%=item.age%></span>
+                </li>
+
+            <%})%>
+        </ul>
+    </div>
 </body>
+
 </html>
